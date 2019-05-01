@@ -7,7 +7,7 @@ import pandas as pd
 
 r_cols = ['user_id', 'movie_id', 'rating', 'timestamp']
 
-data = pd.read_csv('C:/Users/ron.s/Desktop/ml-100k/ml-100k/u1.base', delimiter='\t', names=r_cols, encoding='latin-1')
+data = pd.read_csv('ml-100k/u1.base', delimiter='\t', names=r_cols, encoding='latin-1')
 
 # A. for each movie- average rating todo: needs merge?
 r_data = data.groupby('movie_id')['rating'].mean()
